@@ -448,11 +448,19 @@
 
 .author {
     float: left;
+    font-family: SourceSansPro-Regular;
+}
+
+.author a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-size: 14px;
 }
 
 .comment {
     float: right;
     display: flex;
+    padding-left: 20px;
 }
 
 .title-latest {
@@ -475,6 +483,8 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #ffffff;
 }
 
 .btn-latest button {
@@ -482,6 +492,9 @@
     margin-left: 30px;
     width: 125px;
     height: 30px;
+    color: #00bcd4;
+    font-family: Montserrat-Bold;
+    font-size: 14px;
 }
 
 
@@ -502,17 +515,11 @@
     justify-content: space-between;
 }
 
-.col-one-about {
-    height: 330px;
-    width: 563px;
-    border: 1px solid #4CAF50;
-    border-radius: 0 50px 50px 50px;
-}
-
+.col-one-about,
 .col-two-about {
     height: 330px;
     width: 563px;
-    border: 1px solid #4CAF50;
+    border: 1px solid #dfe5e8;
     border-radius: 0 50px 50px 50px;
 }
 
@@ -524,8 +531,44 @@
     float: left;
 }
 
+.title-content-about p {
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    color: #3c3950;
+}
+
 .icon-title-about {
     float: right;
+}
+
+.description-about {
+    padding: 0 60px
+}
+
+.img-about {
+    margin-top: 35px;
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 369px; */
+}
+
+.card-img-about {
+    background-color: #f1f1f1;
+    width: 52px;
+    height: 32px;
+    margin-right: 10px;
+    /* text-align: center; */
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.checkbox {
+    padding: 0 60px;
+}
+
+.checkbox ul li {
+    padding-bottom: 15px
 }
 
 
@@ -546,7 +589,69 @@
 }
 
 .col-list-products h3 {
+    font-family: Montserrat-Bold;
+    font-size: 19px;
     margin-top: 95px;
+    color: #3c3950;
+}
+
+.card-new-products ul li {
+    display: flex;
+    margin: 33px 0 15px 0;
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+    color: #88949d;
+}
+
+.img-new-products span {
+    position: relative;
+    top: 12px;
+    left: 75px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    vertical-align: middle;
+    background-color: #00bcd4;
+    color: #ffffff;
+}
+
+.img-new-products-one {
+    background-color: #99a9b5;
+    width: 80px;
+    height: 80px;
+}
+
+.des-img-new-products {
+    background-color: #ffffff;
+    width: 285px;
+}
+
+.text-new-products {
+    padding: 20px
+}
+
+.checked {
+    color: orange;
+}
+
+
+/* SELL MORE */
+
+.sell-more {
+    height: 225px;
+    background: #d1edac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-sell-more {
+    font-family: montserrat-ultra-light;
+    font-size: 42px;
+}
+
+.text-sell-more span {
+    font-family: Montserrat-Bold;
 }
 
 
@@ -560,7 +665,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 70px
 }
 
 .row-footer {
