@@ -128,9 +128,9 @@ ul {
 
 .nav ul {
     list-style-type: none;
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; */
     background-color: #333;
 }
 
@@ -257,16 +257,20 @@ ul {
     margin-top: 70px;
 }
 
+
+/* 
 .flex-row {
     display: flex;
     flex-flow: row wrap;
-}
+} */
 
 
 /* CATEGORIES */
 
 .categories {
     width: 261px;
+    display: inline-block;
+    font-family: Montserrat-Bold;
 }
 
 .categories ul {
@@ -284,9 +288,12 @@ ul {
 
 /* PRODUCTS */
 
-.products {
+.products-main {
+    float: right;
     width: calc(100% - 303px);
-    margin-left: 42px;
+}
+
+.products {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -296,19 +303,6 @@ ul {
     width: calc(33.333% - 28px);
     margin-bottom: 42px;
 }
-
-
-/* .title::after {
-    content: "";
-    width: 60px;
-    height: 2px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background: #00bcd4;
-} */
 
 .details-products {
     display: flex;
@@ -469,10 +463,23 @@ ul {
 
 .title-latest {
     margin-top: 42px;
+    font-size: 24px;
+    color: #3c3950;
+}
+
+.title-latest p {
+    font-family: montserrat-ultra-light;
+}
+
+.title-latest span {
+    font-family: Montserrat-Bold;
 }
 
 .description-latest {
     margin-top: 42px;
+    color: #83919a;
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
 }
 
 .btn-latest {
@@ -492,7 +499,7 @@ ul {
 }
 
 .btn-latest button {
-    border: 3px solid #008CBA;
+    border: 3px solid #00bcd4;
     margin-left: 30px;
     width: 125px;
     height: 30px;
@@ -620,7 +627,7 @@ ul {
 }
 
 .img-new-products-one {
-    background-color: #99a9b5;
+    background-color: #c5c5c5;
     width: 80px;
     height: 80px;
 }
@@ -694,16 +701,222 @@ ul {
     display: flex;
 }
 
-.logo-footer,
-.recent-posts,
-.email-us,
-.flickr-feed {
+.col-one-footer,
+.col-two-footer,
+.col-three-footer,
+.col-four-footer {
     width: 261px;
-    height: 300px;
-    background-color: rgb(11, 223, 74);
     margin-right: 40px;
 }
 
 .img-logo-footer {
     display: flex;
+}
+
+.img-logo-footer p {
+    color: #ffffff;
+    font-family: SourceSansPro-Regular;
+    font-size: 38.67px;
+}
+
+.img-logo-footer span {
+    font-family: Montserrat-Bold;
+}
+
+.text-footer {
+    padding-top: 50px;
+}
+
+.text-footer p {
+    color: #93a2ae;
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+}
+
+.contact-footer {
+    padding-top: 73px;
+}
+
+.title-footer {
+    font-family: Montserrat-Bold;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.col-two-footer,
+.col-three-footer,
+.col-four-footer span {
+    font-family: Montserrat-Bold;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.col-one-footer,
+.col-two-footer ul li {
+    padding-top: 20px;
+    color: #93a2ae;
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+}
+
+.address-footer p {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    color: #93a2ae;
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+}
+
+.card-recent-posts {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    padding: 1em 0;
+    text-align: left;
+    margin-top: 38px
+}
+
+.card-item {
+    display: flex;
+}
+
+.img-recent {
+    min-width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #99a9b5;
+    margin: 0 10px 0 0;
+}
+
+.content-recent p {
+    font-size: 16px;
+    color: #63707a;
+    font-family: SourceSansPro-Regular;
+}
+
+.content-recent span {
+    color: #00bcd4
+}
+
+@media (max-width: 820px) {
+    .card-recent-posts {
+        min-width: auto;
+        display: block;
+    }
+    .card-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-item {
+        box-shadow: none;
+    }
+}
+
+hr {
+    border: 1px dotted #c4c4c4;
+    border-style: none none dotted;
+    color: #fff;
+    margin: 10px 0px 10px
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.input-email {
+    margin-top: 50px;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 9px 8px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+    background-color: #181828;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="email"],
+input[type="text"] {
+    height: 40px;
+}
+
+.email-us button {
+    width: 265px;
+    height: 40px;
+    border: none;
+    color: #99a9b5;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #394050;
+    margin-top: 16px;
+}
+
+.project-client {
+    margin-top: 80px;
+}
+
+.useful-links {
+    margin-top: 63px
+}
+
+
+/* FOOTER-END */
+
+.footer-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181828;
+    height: 100px;
+    color: #93a2ae;
+}
+
+.row-footer-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-right {
+    float: left;
+}
+
+.copy-right a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-size: 14px;
+}
+
+.social-icons-footer {
+    list-style-type: none;
+    display: flex;
+}
+
+.social-icons-footer li {
+    margin-right: 11px;
+}
+
+.list-support {
+    list-style-type: none;
+    display: flex;
+}
+
+.list-support li {
+    margin-right: 40px;
 }
