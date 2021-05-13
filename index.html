@@ -144,8 +144,8 @@
                 </ul>
             </div>
         </div>
-        <button class="prev"><img src="./images/arrow prev.png"></button>
-        <button class="next"><img src="./images/arrow next.png"></button>
+        <button class="prev img-main"><img src="./images/arrow prev.png"></button>
+        <button class="next img-main"><img src="./images/arrow next.png"></button>
     </div>
     <!-- CATEGORIES-PRODUCTS -->
     <div class="main-content">
@@ -231,56 +231,49 @@
                         </select>
                     </div>
                     <!-- recent product viewed -->
+
                     <div class="display-style">
                         <p class="title-ctg">RECENTLY VIEWED <img src="./img/levels.png" alt=""> </p>
                         <div class="recently-view-product">
-                            <ul>
-                                <li>
-                                    <div class="product-viewed">
-                                        <div class="img-product-viewed bg1"></div>
-                                        <div class="product-viewed-info">
-                                            <p class="text-content">Product Title Here</p>
-                                            <div class="star">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star (1).png" alt="">
-                                            </div>
-                                            <p class="font-fm-sourceRL">$35.00</p>
-                                        </div>
+                            <div class="product-viewed">
+                                <div class="img-product-viewed one"></div>
+                                <div class="product-viewed-info">
+                                    <p class="text-content">Product Title Here</p>
+                                    <div class="star">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star (1).png" alt="">
                                     </div>
-                                </li>
-                                <!-- <hr id="style-hr"> -->
-                                <li>
-                                    <div class="product-viewed">
-                                        <div class="img-product-viewed bg2">
-                                            <p class="tag-percent tag-percent-view text-content">%</p>
-                                        </div>
-                                        <div class="product-viewed-info">
-                                            <p class="text-content">Product Title Here</p>
-                                            <div class="star">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                                <img src="./images/star.png" alt="">
-                                            </div>
-                                            <p class="font-fm-sourceRL">$35.00</p>
-                                        </div>
+                                    <p class="font-fm-sourceRL">$35.00</p>
+                                </div>
+                            </div>
+                            <div class="line-products"></div>
+                            <div class="product-viewed">
+                                <div class="img-product-viewed two">
+                                    <p class="tag-percent tag-percent-view font-fm-sourceR">%</p>
+                                </div>
+                                <div class="product-viewed-info">
+                                    <p class="text-content">Product Title Here</p>
+                                    <div class="star">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
+                                        <img src="./images/star.png" alt="">
                                     </div>
-                                </li>
-                                <!-- <hr id="style-hr"> -->
-                                <li>
-                                    <div class="product-viewed">
-                                        <div class="img-product-viewed bg3"></div>
-                                        <div class="product-viewed-info">
-                                            <p class="text-content">Product Title Here</p>
-                                            <p class="font-fm-sourceRL">$35.00</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    <p class="font-fm-sourceRL">$35.00</p>
+                                </div>
+                            </div>
+
+                            <div class="product-viewed">
+                                <div class="img-product-viewed three"></div>
+                                <div class="product-viewed-info">
+                                    <p class="text-content">Product Title Here</p>
+                                    <p class="font-fm-sourceRL">$35.00</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- product tag -->
@@ -336,14 +329,14 @@
                     <p class="title-ctg">CART <img src="./images/levels.png" alt=""> </p>
                     <div class="featured-product-box">
                         <div class="product-featured">
-                            <div class="img-product-featured bg1"></div>
+                            <div class="img-product-featured one img-main"></div>
                             <div class="product-viewed-info">
                                 <p class="text-content">Product Title Here</p>
                                 <p class="font-fm-sourceRL">1 x $35.00-$89.99</p>
                             </div>
                         </div>
                         <div class="product-featured">
-                            <div class="img-product-featured bg2">
+                            <div class="img-product-featured two img-main">
                                 <p class="tag-percent tag-percent-featured text-content">%</p>
                             </div>
                             <div class="product-viewed-info">
@@ -371,7 +364,6 @@
                         <div class="ctg-description">
                             <div class="ctg-infor">
                                 <p class="font-fm-monb">SALES</p>
-                                <!-- <hr> -->
                                 <div class="line"></div>
                                 <p class="text-content">9 items</p>
                             </div>
@@ -438,9 +430,9 @@
                     <button><i class="fas fa-angle-left"></i></button>
                     <button><i class="fas fa-angle-right"></i></button>
                 </div>
-                <div class="nav-sort">
-                    <div class="sort-dropdown text-content">
-                        <select>
+                <div class="nav-sort ">
+                    <div class="sort-dropdown ">
+                        <select class=" text-content">
                             <option>Default sorting</option>
                             <option>Default sorting</option>
                             <option>Default sorting</option>
@@ -458,7 +450,7 @@
                     <div class="show-page-dropdown">
                         <span>Showing 1-12 of 17 results</span>
                         <div class="sort-dropdown">
-                            <select>
+                            <select class=" text-content">
                                 <option>Show 12 on pages</option>
                                 <option>Default page 1</option>
                                 <option>Default page 2</option>
@@ -791,86 +783,7 @@
                     <button id="style-btn-pgn"><i class="fas fa-angle-right"></i></button>
                 </div>
             </div>
-            <!-- <div class="list-products"> -->
-            <!-- <div class="products-main">
-                <div class="products">
-                    <div class="card">
-                        <div class="img-products"></div>
-                        <div class="product-ctg">
-                            <div class="product-infor">
-                                <p class="product-name">SALES</p>
-                                <hr>
-                                <p class="iventory">9 items</p>
-                            </div>
-                        </div>
-                        <div class="button-products"></div>
-                    </div>
-                    <div class="card">
-                        <div class="img-products"></div>
-                        <div class="details-products">
-                            <div class="title">
-                                <p><b>SALES</b></p>
-                                <hr>
-                                <p class="quanlity">9 items</p>
-                            </div>
 
-                        </div>
-                        <div class="button-products"></div>
-                    </div>
-                    <div class="card">
-                        <div class="img-products"></div>
-                        <div class="details-products">
-                            <div class="title">
-                                <p><b>SALES</b></p>
-                                <hr>
-                                <p class="quanlity">9 items</p>
-                            </div>
-
-                        </div>
-                        <div class="button-products"></div>
-                    </div>
-                    <div class="card">
-                        <div class="img-products"></div>
-                        <div class="details-products">
-                            <div class="title">
-                                <p><b>SALES</b></p>
-                                <hr>
-                                <p class="quanlity">9 items</p>
-                            </div>
-
-                        </div>
-                        <div class="button-products"></div>
-                    </div>
-                    <div class="card">
-                        <div class="img-products"></div>
-                        <div class="details-products">
-                            <div class="title">
-                                <p><b>SALES</b></p>
-                                <hr>
-                                <p class="quanlity">9 items</p>
-                            </div>
-
-                        </div>
-                        <div class="button-products"></div>
-                    </div>
-                    <div class="card">
-                        <div class="img-products"></div>
-                        <div class="details-products">
-                            <div class="title">
-                                <p><b>SALES</b></p>
-                                <hr>
-                                <p class="quanlity">9 items</p>
-                            </div>
-                        </div>
-                        <div class="button-products"></div>
-                    </div>
-
-                </div>
-                <div class="panigation-products">
-                    <a href="#">&laquo;</a>
-                    <a href="#">&raquo;</a>
-                </div>
-            </div> -->
         </div>
     </div>
     <!-- OUR BRANDS -->
@@ -922,7 +835,6 @@
                             </div>
                         </div>
                         <div class="title-latest">
-                            <!-- <h2>5 MAY: SIMPLE BLOG</h2> -->
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
                         <div class="description-latest text-content">
@@ -947,7 +859,6 @@
                             </div>
                         </div>
                         <div class="title-latest">
-                            <!-- <h2>5 MAY: SIMPLE BLOG</h2> -->
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
                         <div class="description-latest text-content">
@@ -972,7 +883,6 @@
                             </div>
                         </div>
                         <div class="title-latest">
-                            <!-- <h2>5 MAY: SIMPLE BLOG</h2> -->
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
                         <div class="description-latest text-content">
@@ -1084,25 +994,7 @@
                     <div class="card-new-products">
                         <ul>
                             <li>
-                                <div class="img-new-products-one">
-                                </div>
-                                <div class="des-img-new-products">
-                                    <div class="text-new-products text-content">
-                                        <p>Products Title Here</p>
-                                        <p style="float: left;">$35.00-$89.99</p>
-                                        <p style="float: right;">
-                                            <img src="./images/star.png" alt="">
-                                            <img src="./images/star.png" alt="">
-                                            <img src="./images/star.png" alt="">
-                                            <img src="./images/star.png" alt="">
-                                            <img src="./images/star (1).png" alt="">
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-new-products" style="background-color: #c9d6d8; width: 80px; height: 80px;">
-
+                                <div class="img-new-products one img-main">
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
                                     <div class="text-new-products text-content">
@@ -1119,7 +1011,24 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="img-new-products" style="background-color: #c5c5c5; width: 80px; height: 80px;">
+                                <div class="img-new-products two img-main">
+                                </div>
+                                <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                                    <div class="text-new-products text-content">
+                                        <p>Products Title Here</p>
+                                        <p style="float: left;">$35.00-$1289.99</p>
+                                        <p style="float: right;">
+                                            <img src="./images/star.png" alt="">
+                                            <img src="./images/star.png" alt="">
+                                            <img src="./images/star.png" alt="">
+                                            <img src="./images/star.png" alt="">
+                                            <img src="./images/star (1).png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-new-products three img-main">
                                     <span>%</span>
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
@@ -1144,7 +1053,7 @@
                     <div class="card-new-products">
                         <ul>
                             <li>
-                                <div class="img-new-products" style="background-color: #99a9b5; width: 80px; height: 80px;">
+                                <div class="img-new-products one img-main">
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
                                     <div class="text-new-products text-content">
@@ -1161,7 +1070,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="img-new-products" style="background-color: #c9d6d8; width: 80px; height: 80px;">
+                                <div class="img-new-products two img-main">
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
                                     <div class="text-new-products text-content">
@@ -1178,7 +1087,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="img-new-products" style="background-color: #c5c5c5; width: 80px; height: 80px;">
+                                <div class="img-new-products three img-main">
                                     <span>%</span>
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
@@ -1203,7 +1112,7 @@
                     <div class="card-new-products">
                         <ul>
                             <li>
-                                <div class="img-new-products" style="background-color: #99a9b5; width: 80px; height: 80px;">
+                                <div class="img-new-products one img-main">
                                     <span>%</span>
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
@@ -1215,7 +1124,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="img-new-products" style="background-color: #c9d6d8; width: 80px; height: 80px;">
+                                <div class="img-new-products two img-main">
                                     <span>%</span>
                                 </div>
                                 <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
@@ -1233,7 +1142,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="img-new-products" style="background-color: #c5c5c5; width: 80px; height: 80px;">
+                                <div class="img-new-products three img-main">
                                     <span>%</span>
                                 </div>
                                 <div class="des-img-new-products">
@@ -1270,7 +1179,7 @@
             <div class="footer-content">
                 <div class="thegem-footer">
                     <div class="img-logo-footer">
-                        <img src="./images/logo.png" alt="" style="width: 90px; height: 90px;">
+                        <img src="./images/logo.png" alt="">
                         <p>THE <br><span> GEM</span></p>
                     </div>
                     <div class="text-footer text-content">
@@ -1300,21 +1209,21 @@
                                 <p class="title-footer">RECENT POSTS <img src="./images/levels.png" alt=""></p>
                                 <div class="card-recent-posts">
                                     <div class="card-item">
-                                        <div class="img-recent"></div>
+                                        <div class="img-recent one"></div>
                                         <div class="text-content">
                                             <p>Proin gravida nibh vel velit auctor aliquet aenean... <br> <span>27 Dec 2015</span></p>
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="card-item">
-                                        <div class="img-recent"></div>
+                                        <div class="img-recent two"></div>
                                         <div class="text-content">
                                             <p>Proin gravida nibh vel velit auctor aliquet aenean... <br> <span>27 Dec 2015</span></p>
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="card-item">
-                                        <div class="img-recent"></div>
+                                        <div class="img-recent three"></div>
                                         <div class="text-content">
                                             <p>Proin gravida nibh vel velit auctor aliquet aenean... <br> <span>27 Dec 2015</span></p>
                                         </div>
@@ -1396,7 +1305,7 @@
                                     <input type="text" placeholder="Your email address">
                                     <i class="fas fa-chevron-right icon"></i>
                                 </div>
-                                <p style="font-family: SourceSansPro-Regular ; font-size: 14px;"><span style="color: red">*</span> Personal information will be encrypted</p>
+                                <p><span style="color: #00bcd4">*</span> Personal information will be encrypted</p>
                             </div>
                         </div>
                     </div>
