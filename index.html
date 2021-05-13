@@ -13,8 +13,8 @@
 
 <body>
     <!-- HEADER -->
-    <div class="header" id="top">
-        <div class="area-content">
+    <div class="header">
+        <div class="area-content ">
             <div class="row-header">
                 <div class="head-phone">
                     <img src="./images/headphones.png" />
@@ -144,8 +144,8 @@
                 </ul>
             </div>
         </div>
-        <button class="prev img-main"><img src="./images/arrow prev.png"></button>
-        <button class="next img-main"><img src="./images/arrow next.png"></button>
+        <div class="prev img-main"><img src="./images/arrow prev.png"></div>
+        <div class="next img-main"><img src="./images/arrow next.png"></div>
     </div>
     <!-- CATEGORIES-PRODUCTS -->
     <div class="main-content">
@@ -806,8 +806,8 @@
                 <div class="col-6" id="circle">
                 </div>
             </div>
-            <div style="text-align:center">
-                <span class="dot"></span>
+            <div class="dots">
+                <span class="dot" id="dot1"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -816,106 +816,86 @@
     </div>
     <!-- LATEST NEWS -->
     <p class="title-latest-news">LATEST NEWS</p>
-
     <div class="latest-news">
         <div class="area-content">
             <div class="latest-news-row">
                 <div class="card-latest-news">
                     <div class="img-latest"></div>
                     <div class="content-latest">
-                        <div class="react">
-                            <div class="author">
-                                <p>By <a href="">Admin</a></p>
-                            </div>
-                            <div class="comment">
-                                <img src="./images/speech-bubble.png" alt="">
-                                <p>0</p>
-                                <img src="./images/heart.png" alt="">
-                                <p>1</p>
-                            </div>
+                        <div class="emotion text-content">
+                            <p class="by-author">By <span>Admin</span></p>
+                            <p class="icon-cmt">
+                                <span> <i class="fas fa-comment"></i>0</span> |
+                                <span> <i class="fas fa-heart"></i>1</span>
+                            </p>
                         </div>
                         <div class="title-latest">
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
-                        <div class="description-latest text-content">
-                            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                        </div>
+                        <p class="description-latest text-content">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                         <div class="btn-latest">
                             <div><i class="fas fa-share-alt"></i></div>
-                            <div><button>READ MORE </button></div>
+                            <button>READ MORE </button>
                         </div>
                     </div>
                 </div>
                 <div class="card-latest-news">
                     <div class="img-latest"></div>
                     <div class="content-latest">
-                        <div class="react">
-                            <div class="author">
-                                <p>By <a href="">Admin</a></p>
-                            </div>
-                            <div class="comment">
-                                <img src="./images/speech-bubble.png" alt="">0
-                                <img src="./images/heart.png" alt="">1
-                            </div>
+                        <div class="emotion text-content">
+                            <p class="by-author">By <span> Admin</span></p>
+                            <p class="icon-cmt">
+                                <span> <i class="fas fa-comment"></i>0</span> |
+                                <span> <i class="fas fa-heart"></i>1</span>
+                            </p>
                         </div>
                         <div class="title-latest">
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
-                        <div class="description-latest text-content">
-                            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                        </div>
+                        <p class="description-latest text-content">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                         <div class="btn-latest">
                             <div><i class="fas fa-share-alt"></i></div>
-                            <div><button>READ MORE </button></div>
+                            <button>READ MORE </button>
                         </div>
                     </div>
                 </div>
                 <div class="card-latest-news">
                     <div class="img-latest"></div>
                     <div class="content-latest">
-                        <div class="react">
-                            <div class="author">
-                                <p>By <a href="">Admin</a></p>
-                            </div>
-                            <div class="comment">
-                                <img src="./images/speech-bubble.png" alt="">0
-                                <img src="./images/heart.png" alt="">1
-                            </div>
+                        <div class="emotion text-content">
+                            <p class="by-author">By <span> Admin</span></p>
+                            <p class="icon-cmt">
+                                <span> <i class="fas fa-comment"></i>0</span> |
+                                <span> <i class="fas fa-heart"></i>1</span>
+                            </p>
                         </div>
                         <div class="title-latest">
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
-                        <div class="description-latest text-content">
-                            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                        </div>
+                        <p class="description-latest text-content">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                         <div class="btn-latest">
                             <div><i class="fas fa-share-alt"></i></div>
-                            <div><button>READ MORE </button></div>
+                            <button>READ MORE </button>
                         </div>
                     </div>
                 </div>
                 <div class="card-latest-news">
                     <div class="img-latest"></div>
                     <div class="content-latest">
-                        <div class="react">
-                            <div class="author">
-                                <p>By <a href="">Admin</a></p>
-                            </div>
-                            <div class="comment">
-                                <img src="./images/speech-bubble.png" alt="">0
-                                <img src="./images/heart.png" alt="">1
-                            </div>
+                        <div class="emotion text-content">
+                            <p class="by-author">By <span> Admin</span></p>
+                            <p class="icon-cmt">
+                                <span> <i class="fas fa-comment"></i>0</span> |
+                                <span> <i class="fas fa-heart"></i>1</span>
+                            </p>
                         </div>
                         <div class="title-latest">
-                            <!-- <h2>5 MAY: SIMPLE BLOG</h2> -->
                             <p><span>5 MAY:</span>&nbsp;SIMPLE BLOG POST</p>
                         </div>
-                        <div class="description-latest text-content">
-                            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                        </div>
+                        <p class="description-latest text-content">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                         <div class="btn-latest">
                             <div><i class="fas fa-share-alt"></i></div>
-                            <div><button>READ MORE </button></div>
+                            <button>READ MORE </button>
                         </div>
                     </div>
                 </div>
@@ -923,7 +903,12 @@
         </div>
     </div>
     <!-- LINE -->
-    <p style="text-align: center;margin: 70px;">-----------------------</p>
+    <div class="line-horizontal">
+        <div class="area-content">
+            <p class="space"></p>
+            <p class="space"></p>
+        </div>
+    </div>
     <!-- ABOUT -->
     <div class="about">
         <div class="area-content">
@@ -1284,7 +1269,7 @@
                         </div>
                         <div class="content-col2">
                             <div class="project-client">
-                                <p class="title-footer">PROJECTS/CLIENTS <img src="./images/levels.png" alt=""></p>
+                                <p class="title-footer">PROJECTS / CLIENTS <img src="./images/levels.png" alt=""></p>
                                 <div class="img-project-client">
                                     <div class="img-one one"></div>
                                     <div class="img-one two"></div>
@@ -1305,7 +1290,7 @@
                                     <input type="text" placeholder="Your email address">
                                     <i class="fas fa-chevron-right icon"></i>
                                 </div>
-                                <p><span style="color: #00bcd4">*</span> Personal information will be encrypted</p>
+                                <p class=" text-content"><span style="color: #00bcd4">*</span> Personal information will be encrypted</p>
                             </div>
                         </div>
                     </div>
@@ -1362,7 +1347,7 @@
                 </div>
             </div>
         </div>
-        <!-- <img src="./images/right-arrow (2).png" alt="" id="top"> -->
+        <a href=""><button id="top"><i class="fas fa-chevron-up icon-top"></i></button></a>
     </div>
 </body>
 
