@@ -46,6 +46,12 @@ hr {
     font-size: 16px;
 }
 
+.font-fm-sourceRL {
+    font-size: 20px;
+    font-family: SourceSansPro-Light;
+    color: #5a5868
+}
+
 .one {
     background-color: #99a9b5;
 }
@@ -144,6 +150,7 @@ hr {
 /* NAVIGATION */
 
 .navigation {
+    width: 100%;
     height: 96px;
     display: flex;
     justify-content: center;
@@ -178,7 +185,6 @@ hr {
 }
 
 .list-item button {
-    color: #3c3950;
     font-size: 14px;
     border: 3px solid #3c3950;
     padding: 10px 30px;
@@ -186,8 +192,10 @@ hr {
     cursor: pointer;
 }
 
-.nav-list p {
+.nav-list a {
+    color: #3c3950;
     padding-left: 30px;
+    text-decoration: none;
 }
 
 .nav-list :hover {
@@ -203,9 +211,28 @@ hr {
 }
 
 
+/* RESPONSIVE NAV */
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(79, 82, 80);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
 /* BANNER */
 
 .banner {
+    max-width: 100%;
+    height: auto;
     background-image: linear-gradient(to right, #7b3d62, rgba(121, 137, 156, 0.7));
     position: relative;
     display: flex;
@@ -382,10 +409,8 @@ hr {
 /* form search */
 
 .search-box {
-    margin-top: 68px;
+    margin: 68px 0 60px;
     position: relative;
-    margin-bottom: 60px;
-    /* background-color: #ffffff !important; */
 }
 
 .search-icon {
@@ -476,7 +501,7 @@ hr {
 
 .recently-view-product {
     background-color: #f0f3f2;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -678,12 +703,6 @@ hr {
     height: 0;
     border: 1px solid #00bcd4;
     margin: 8px;
-}
-
-.font-fm-sourceRL {
-    font-size: 20px;
-    font-family: SourceSansPro-Light;
-    color: #5a5868
 }
 
 .lists-products {
@@ -993,10 +1012,11 @@ input:checked+.slider:before {
     background-size: 32px 32px, 32px 32px;
 }
 
-.our-brands p {
+.title-our-brands {
     font-family: montserrat-ultra-light;
     font-size: 28px;
     text-align: center;
+    color: #555;
 }
 
 .row-our-brands {
@@ -1039,10 +1059,6 @@ input:checked+.slider:before {
 /* LATEST NEWS */
 
 .title-latest-news {
-    font-family: montserrat-ultra-light;
-    font-size: 28px;
-    text-align: center;
-    color: #555;
     padding-top: 77px;
 }
 
@@ -1203,7 +1219,8 @@ input:checked+.slider:before {
     float: right;
 }
 
-.description-about {
+.description-about,
+.checkbox-about {
     padding: 0 60px;
 }
 
@@ -1224,12 +1241,12 @@ input:checked+.slider:before {
     display: flex;
 }
 
-.checkbox-about {
-    padding: 0 60px;
-}
-
 .checkbox-about ul li {
     padding-bottom: 15px
+}
+
+.checkbox-about li img {
+    margin-right: 10px;
 }
 
 
@@ -1239,7 +1256,7 @@ input:checked+.slider:before {
     margin-top: 70px;
     height: 526px;
     background: #f0f3f2;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
 }
@@ -1249,7 +1266,7 @@ input:checked+.slider:before {
     justify-content: space-between;
 }
 
-.col-list-products h3 {
+.title-list-products {
     font-size: 19px;
     margin-top: 95px;
     color: #3c3950;
@@ -1537,6 +1554,17 @@ textarea {
     height: 80px;
 }
 
+.text-news-letter {
+    margin-top: 44px
+}
+
+.inputNew-letter {
+    display: flex;
+    margin-top: 45px;
+    width: 100%;
+    align-items: center;
+}
+
 
 /* FOOTER-END */
 
@@ -1582,17 +1610,6 @@ textarea {
     margin-right: 35px;
 }
 
-.text-news-letter {
-    margin-top: 44px
-}
-
-.inputNew-letter {
-    display: flex;
-    margin-top: 45px;
-    width: 100%;
-    align-items: center;
-}
-
 .icon {
     display: flex;
     height: 40px;
@@ -1603,7 +1620,8 @@ textarea {
     cursor: pointer;
 }
 
-#top {
+.icon-top {
+    color: #99a9b5;
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -1611,8 +1629,7 @@ textarea {
     background-color: #394050;
     transform: translateY(-100%);
     cursor: pointer;
-}
-
-.icon-top {
-    color: #99a9b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

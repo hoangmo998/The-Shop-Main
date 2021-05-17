@@ -9,6 +9,7 @@
     <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-responsive.css">
 </head>
 
 <body>
@@ -43,7 +44,6 @@
                         <img src="./images/pinterest.png" />
                     </li>
                 </ul>
-
                 <ul class="direction-item">
                     <li>
                         <img src="./images/next.png" />
@@ -73,34 +73,42 @@
         </div>
     </div>
     <!-- NAVIGATION -->
+
     <div class="navigation">
         <div class="area-content">
             <div class="navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+                <label for="check" class="overlay"></label>
                 <div class="brand">
                     <img src="./images/diamond.png">
                     <span>THE GEM</span>
                 </div>
                 <ul class="nav-list">
                     <li class="list-item">
-                        <p>HOME</p>
+                        <a href="">
+                            HOME
+                        </a>
                     </li>
                     <li class="list-item">
-                        <p>PAGES</p>
+                        <a href="">
+                            PAGES
+                        </a>
                     </li>
                     <li class="list-item">
-                        <p>BLOG</p>
+                        <a href="">BLOG</a>
                     </li>
                     <li class="list-item">
-                        <p>PORTFOLIOS</p>
+                        <a href="">PORTFOLIOS</a>
                     </li>
                     <li class="list-item">
-                        <p><button>SHOP</button></p>
+                        <a href="">SHOP</a>
                     </li>
                     <li class="list-item">
-                        <p>FEATURES</p>
+                        <a href="">FEATURES</a>
                     </li>
                     <li class="list-item">
-                        <p>ELEMENTS</p>
+                        <a href="">ELEMENTS</a>
                     </li>
                 </ul>
                 <ul class="nav-icon">
@@ -117,15 +125,12 @@
                         <img src="./images/tag.png" alt="">
                     </li>
                 </ul>
-
             </div>
         </div>
-    </div>
     </div>
     <!-- BANNER -->
     <div class="banner">
         <div class="area-content">
-
             <div class="description-banner">
                 <p class="text-direction-page">
                     Home → Shop
@@ -252,7 +257,7 @@
                             <div class="line-products"></div>
                             <div class="product-viewed">
                                 <div class="img-product-viewed two">
-                                    <p class="tag-percent tag-percent-view font-fm-sourceR">%</p>
+                                    <p class="tag-percent tag-percent-view text-content">%</p>
                                 </div>
                                 <div class="product-viewed-info">
                                     <p class="text-content">Product Title Here</p>
@@ -789,7 +794,7 @@
     <!-- OUR BRANDS -->
     <div class="our-brands">
         <div class="area-content">
-            <p>OUR BRANDS</p>
+            <p class="title-our-brands">OUR BRANDS</p>
 
             <div class="row-our-brands">
 
@@ -815,7 +820,7 @@
         </div>
     </div>
     <!-- LATEST NEWS -->
-    <p class="title-latest-news">LATEST NEWS</p>
+    <p class="title-latest-news title-our-brands">LATEST NEWS</p>
     <div class="latest-news">
         <div class="area-content">
             <div class="latest-news-row">
@@ -958,8 +963,7 @@
                     </div>
                     <div class="checkbox-about text-content">
                         <ul>
-                            <li><img src="./images/checkbox.png" alt=""> Lorem ipsum dolor sit amet, consectetur
-                            </li>
+                            <li><img src="./images/checkbox.png" alt=""> Lorem ipsum dolor sit amet, consectetur</li>
                             <li><img src="./images/checkbox.png" alt=""> Adipisicing elit, sed do eiusmod tempor </li>
                             <li><img src="./images/checkbox.png" alt=""> Incididunt ut labore et dolore magna aliqua</li>
                             <li><img src="./images/checkbox.png" alt=""> Enim ad minim veniam, quis nostrud exercitation </li>
@@ -974,14 +978,14 @@
     <div class="list-products">
         <div class="area-content">
             <div class="col-list-products">
-                <div class="col-one-list-products">
-                    <h3>NEW PRODUCTS</h3>
+                <div>
+                    <p class="title-list-products">NEW PRODUCTS <img src="./images/levels.png" alt=""></p>
                     <div class="card-new-products">
                         <ul>
                             <li>
                                 <div class="img-new-products one img-main">
                                 </div>
-                                <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                                <div class="des-img-new-products">
                                     <div class="text-new-products text-content">
                                         <p>Products Title Here</p>
                                         <p style="float: left;">$35.00-$1289.99</p>
@@ -998,7 +1002,7 @@
                             <li>
                                 <div class="img-new-products two img-main">
                                 </div>
-                                <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                                <div class="des-img-new-products">
                                     <div class="text-new-products text-content">
                                         <p>Products Title Here</p>
                                         <p style="float: left;">$35.00-$1289.99</p>
@@ -1016,7 +1020,7 @@
                                 <div class="img-new-products three img-main">
                                     <span>%</span>
                                 </div>
-                                <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                                <div class="des-img-new-products">
                                     <div class="text-new-products text-content">
                                         <p>Products Title Here</p>
                                         <p style="float: left;">$35.00-$89.99</p>
@@ -1033,8 +1037,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-two-list-products">
-                    <h3>TOP RATED PRODUCTS</h3>
+                <div>
+                    <p class="title-list-products">TOP RATED PRODUCTS <img src="./images/levels.png" alt=""></p>
                     <div class="card-new-products">
                         <ul>
                             <li>
@@ -1092,8 +1096,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-three-list-products">
-                    <h3>ON SALES</h3>
+                <div>
+                    <p class="title-list-products">ON SALES <img src="./images/levels.png" alt=""></p>
                     <div class="card-new-products">
                         <ul>
                             <li>
@@ -1347,7 +1351,7 @@
                 </div>
             </div>
         </div>
-        <a href=""><button id="top"><i class="fas fa-chevron-up icon-top"></i></button></a>
+        <a href=""><i class="fas fa-chevron-up icon-top"></i></a>
     </div>
 </body>
 
