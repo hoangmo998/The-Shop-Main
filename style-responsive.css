@@ -90,10 +90,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
         font-size: 20px;
         text-align: center;
     }
-    .img-main {
-        width: 65px;
-        height: 65px;
-    }
     .navbar {
         justify-content: flex-start;
     }
@@ -115,12 +111,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .product-item {
         width: calc(50% - 15px);
     }
-    .latest-news-row {
-        gap: 42px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .col-about {
         display: flex;
         flex-direction: column;
@@ -133,13 +123,22 @@ only screen and (min-device-pixel-ratio: 1.5) {
         height: auto;
     }
     .col-list-products {
-        display: flex;
         flex-wrap: wrap;
         align-items: center;
+    }
+    .thegem-footer,
+    .content-thegem {
+        display: flex;
+        flex-direction: row;
     }
 }
 
 @media screen and (max-width: 739px) {
+    .prev,
+    .next {
+        width: 35px;
+        height: 35px;
+    }
     .main-product,
     .product-item,
     .categories,
@@ -158,6 +157,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
     }
     .show-page-dropdown span {
         display: none;
+    }
+    #circle {
+        width: 50px;
+        height: 50px;
     }
     .latest-news-row {
         flex-wrap: wrap;
@@ -191,12 +194,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .text-sell-more {
         font-size: 24px;
     }
-    .footer-content,
     .content1,
-    .content2 {
+    .content2,
+    .content-thegem,
+    .footer-content {
         gap: 30px;
-        align-items: center;
         display: flex;
         flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .row-footer-end,
+    .social-footer-end {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .list-support {
+        display: none;
     }
 }
