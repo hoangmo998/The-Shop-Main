@@ -9,7 +9,6 @@
     <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style-responsive.css">
 </head>
 
 <body>
@@ -106,13 +105,13 @@
             </p>
             <ul>
                 <li>
-                    <p class="text-banner">
+                    <p class="title-banner">
                         <span>50%</span> OFF
                     </p>
                 </li>
                 <li>
-                    <p class="text-banner-small"> Annual Seasonal Discounts On All Kinds Of Jewelry In Selected Categories. </p>
-                    <p class="text-banner-small"> Limited Time Only Proposition ! Look For The "Sales" Label Over Desired Items </p>
+                    <p class="text-banner"> Annual Seasonal Discounts On All Kinds Of Jewelry In Selected Categories. </p>
+                    <p class="text-banner"> Limited Time Only Proposition ! Look For The "Sales" Label Over Desired Items </p>
                 </li>
 
             </ul>
@@ -159,23 +158,23 @@
                     <li><a href="">AENEAN</a></li>
                 </ul>
                 <form class="search-box">
-                    <input type="text" class="mySearch" placeholder="Search for products...">
-                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search for products...">
+                    <i class="fas fa-search"></i>
                 </form>
-                <div class="filter-st">
-                    <div class="display-style">
+                <div class="filter">
+                    <div class="filter-item">
                         <p class="title-ctg"> FILTER BY PRICE <img src="./images/levels.png" alt=""> </p>
                         <div class="filter-price">
                             <div class="myProgress"></div>
-                            <i class="fas fa-circle circle-icon-start"></i>
-                            <i class="fas fa-circle circle-icon-end"></i>
+                            <i class="fas fa-circle icon-start"></i>
+                            <i class="fas fa-circle icon-end"></i>
                         </div>
                         <div class="btn-filter">
                             <button>FILTER</button>
                             <p>Price: <span> $345 - $1640</span></p>
                         </div>
                     </div>
-                    <div class="display-style">
+                    <div class="filter-item">
                         <p class="title-ctg"> FILTER BY COLOR <img src="./images/levels.png" alt=""> </p>
                         <select class="style-select">
                         <option>Any Color</option>
@@ -184,7 +183,7 @@
                         <option>Violet</option>
                     </select>
                     </div>
-                    <div class="display-style">
+                    <div class="filter-item">
                         <p class="title-ctg"> FILTER BY PRICE <img src="./images/levels.png" alt=""> </p>
                         <select class="style-select">
                         <option>Any Size</option>
@@ -195,7 +194,7 @@
                     </div>
                     <!-- recent product viewed -->
 
-                    <div class="display-style">
+                    <div class="filter-item">
                         <p class="title-ctg">RECENTLY VIEWED <img src="./img/levels.png" alt=""> </p>
                         <div class="recently-view-product">
                             <div class="product-viewed">
@@ -240,7 +239,7 @@
                         </div>
                     </div>
                     <!-- product tag -->
-                    <div class="display-style">
+                    <div class="filter-item">
                         <p class="title-ctg"> PRODUCT TAGS <img src="./images/levels.png" alt=""> </p>
                         <div class="prod-tags">
                             <span>morbi</span>
@@ -266,9 +265,35 @@
                         </div>
                     </div>
                     <!-- featured products -->
-                    <div class="display-style">
+                    <div class="filter-item">
                         <p class="title-ctg">FEATURED PRODUCTS <img src="./images/levels.png" alt=""> </p>
-
+                        <div class="featured-product-box">
+                            <div class="product-featured">
+                                <div class="img-main one"></div>
+                                <div class="product-viewed-info">
+                                    <p class="font-fm-sourceR">Product Title Here</p>
+                                    <p class="font-fm-sourceRL">$35.00-$89.99</p>
+                                </div>
+                            </div>
+                            <div class="product-featured">
+                                <div class="img-main two">
+                                    <p class="percent">%</p>
+                                </div>
+                                <div class="product-viewed-info">
+                                    <p class="font-fm-sourceR">Product Title Here</p>
+                                    <p class="font-fm-sourceRL">$35.00-$89.99</p>
+                                </div>
+                            </div>
+                            <div class="product-featured">
+                                <div class="img-main three">
+                                    <p class="percent">%</p>
+                                </div>
+                                <div class="product-viewed-info">
+                                    <p class="font-fm-sourceR">Product Title Here</p>
+                                    <p class="font-fm-sourceRL">$35.00-$89.99</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ads coupon -->
@@ -288,18 +313,18 @@
                     </div>
                 </div>
                 <!-- cart -->
-                <div class="display-style">
+                <div class="filter-item">
                     <p class="title-ctg">CART <img src="./images/levels.png" alt=""> </p>
                     <div class="featured-product-box">
                         <div class="product-featured">
-                            <div class="img-product-featured one"></div>
+                            <div class="img-main one"></div>
                             <div class="product-viewed-info">
                                 <p>Product Title Here</p>
                                 <p class="font-fm-sourceRL">1 x $35.00-$89.99</p>
                             </div>
                         </div>
                         <div class="product-featured">
-                            <div class="img-product-featured two">
+                            <div class="img-main two">
                                 <p class="percent">%</p>
                             </div>
                             <div class="product-viewed-info">
@@ -737,13 +762,13 @@
                 </div>
                 <!-- btn pagination -->
                 <div class="btn-pagination" id="btn-mr">
-                    <button id="style-btn-pgn"><i class="fas fa-angle-left"></i></button>
-                    <button id="style-btn-1">1</button>
+                    <button class="style-btn btn-color"><i class="fas fa-angle-left"></i></button>
+                    <button class="style-btn btn-color1">1</button>
                     <button>2</button>
                     <button>3</button>
-                    <button id="style-btn-4">4</button>
+                    <button class="style-btn btn-color4">4</button>
                     <button>5</button>
-                    <button id="style-btn-pgn"><i class="fas fa-angle-right"></i></button>
+                    <button class="style-btn"><i class="fas fa-angle-right"></i></button>
                 </div>
             </div>
         </div>
@@ -918,7 +943,7 @@
                 <div class="card-new-products">
                     <ul>
                         <li>
-                            <div class="img-new-products one ">
+                            <div class="img-main one ">
                             </div>
                             <div class="des-img-new-products">
                                 <div class="text-new-products">
@@ -935,7 +960,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-new-products two">
+                            <div class="img-main two">
                             </div>
                             <div class="des-img-new-products">
                                 <div class="text-new-products">
@@ -952,7 +977,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-new-products three">
+                            <div class="img-main three">
                                 <span>%</span>
                             </div>
                             <div class="des-img-new-products">
@@ -977,9 +1002,9 @@
                 <div class="card-new-products">
                     <ul>
                         <li>
-                            <div class="img-new-products one ">
+                            <div class="img-main one ">
                             </div>
-                            <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                            <div class="des-img-new-products">
                                 <div class="text-new-products">
                                     <p>Products Title Here</p>
                                     <p style="float: left;">$35.00-$89.99</p>
@@ -994,9 +1019,9 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-new-products two ">
+                            <div class="img-main two ">
                             </div>
-                            <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                            <div class="des-img-new-products">
                                 <div class="text-new-products">
                                     <p>Products Title Here</p>
                                     <p style="float: left;">$35.00-$1289.99</p>
@@ -1011,10 +1036,10 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-new-products three ">
+                            <div class="img-main three ">
                                 <span>%</span>
                             </div>
-                            <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                            <div class="des-img-new-products">
                                 <div class="text-new-products">
                                     <p>Products Title Here</p>
                                     <p style="float: left;">$35.00-$89.99</p>
@@ -1036,10 +1061,10 @@
                 <div class="card-new-products">
                     <ul>
                         <li>
-                            <div class="img-new-products one ">
+                            <div class="img-main one ">
                                 <span>%</span>
                             </div>
-                            <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                            <div class="des-img-new-products">
                                 <div class="text-new-products">
                                     <p>Products Title Here</p>
                                     <p style="float: left;">$35.00-$89.99</p>
@@ -1048,10 +1073,10 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-new-products two">
+                            <div class="img-main two">
                                 <span>%</span>
                             </div>
-                            <div class="des-img-new-products" style="background-color: #ffffff; width: 285px;">
+                            <div class="des-img-new-products">
                                 <div class="text-new-products">
                                     <p>Products Title Here</p>
                                     <p style="float: left;">$35.00-$1289.99</p>
@@ -1066,7 +1091,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-new-products three ">
+                            <div class="img-main three ">
                                 <span>%</span>
                             </div>
                             <div class="des-img-new-products">

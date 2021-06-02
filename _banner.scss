@@ -1,0 +1,65 @@
+/* BANNER */
+
+.banner {
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, #7b3d62, rgba(121, 137, 156, 0.7));
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.title-banner {
+    @include font-style(ml);
+    font-size: 100px;
+}
+
+.text-banner {
+    font-size: 24px;
+    @include font-style(sl);
+    margin-top: 9px;
+}
+
+.description-banner {
+    @extend .area-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+    color: $white;
+    ul {
+        text-align: right;
+    }
+}
+
+.text-direction-page {
+    @include font-style(sr);
+    position: absolute;
+    left: 0%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.next,
+.prev {
+    width: 80px;
+    height: 80px;
+    @extend .display-align;
+    cursor: pointer;
+    background-color: $gray6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &:hover {
+        background: $blue1;
+    }
+}
+
+.next {
+    right: 0%;
+}
+
+.prev {
+    left: 0%;
+}
