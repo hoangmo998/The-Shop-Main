@@ -19,16 +19,13 @@
     color: $gray4;
 }
 
-.one {
-    background-color: $gray3;
-}
-
-.two {
-    background-color: $gray10;
-}
-
-.three {
-    background-color: $gray11;
+$bg: $gray3,
+$gray10,
+$gray11;
+@for $i from 1 through length($bg) {
+    .bg-#{$i} {
+        background-color: nth($bg, $i);
+    }
 }
 
 .img-main {
