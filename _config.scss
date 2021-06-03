@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.area-content {
+    width: 1170px;
+    position: relative;
+}
+
+.display-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@mixin media-md {
+    @media screen and (max-width: 1161px) {
+        @content
+    }
+}
+
+@mixin media-tablet {
+    @media only screen and (min-width: 740px) and (max-width: 1161px) {
+        @content
+    }
+}
+
+@mixin media-mobile {
+    @media screen and (max-width: 739px) {
+        @content
+    }
+}

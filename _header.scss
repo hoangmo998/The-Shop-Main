@@ -1,0 +1,54 @@
+/* HEADER */
+
+.header {
+    background-color: $gray1;
+    height: 52px;
+    @include font-style(sr);
+    font-size: 14px;
+    color: $gray2;
+    @extend .display-align;
+}
+
+.row-header {
+    @extend .area-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-phone {
+    margin-right: 13px;
+}
+
+.number-phone {
+    transform: translateX(-29px);
+    padding-bottom: 5px;
+}
+
+.social-icons {
+    margin-right: 95px;
+    display: flex;
+    li {
+        margin-right: 11px;
+    }
+}
+
+.direction-item {
+    display: flex;
+    margin-right: 50px;
+    img {
+        height: 10px;
+    }
+    li {
+        margin-right: 20px;
+    }
+}
+
+.btn-wish-list button {
+    cursor: pointer;
+    width: 101px;
+    height: 30px;
+    color: $white;
+    background-color: $gray5;
+    border-radius: 4px;
+}

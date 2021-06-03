@@ -1,0 +1,38 @@
+$mb: Montserrat-Bold;
+$sl: SourceSansPro-Light;
+$ml: montserrat-ultra-light;
+$sr: SourceSansPro-Regular;
+@font-face {
+    font-family: $mb;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: $sl;
+    src: url(./fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: $ml;
+    src: url(./fonts/montserrat-ultra-light.otf);
+}
+
+@font-face {
+    font-family: $sr;
+    src: url(./fonts/SourceSansPro-Regular.ttf);
+}
+
+@mixin font-style ($font) {
+    @if ($font==mb) {
+        font-family: $mb;
+    }
+    @else if ($font==sl) {
+        font-family: $sl;
+    }
+    @else if ( $font==ml) {
+        font-family: $ml;
+    }
+    @else {
+        font-family: $sr;
+    }
+}

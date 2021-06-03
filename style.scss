@@ -1,0 +1,82 @@
+@import 'fonts',
+'colors';
+@import 'config';
+@import 'header';
+@import 'navigation';
+@import 'banner';
+@import 'main';
+@import 'footer';
+@import 'responsive';
+.text-content {
+    @include font-style(sr);
+    color: $gray2;
+    font-size: 16px;
+}
+
+.font-fm-sourceRL {
+    font-size: 20px;
+    @include font-style(sl);
+    color: $gray4;
+}
+
+$bg: $gray3,
+$gray10,
+$gray11;
+@for $i from 1 through length($bg) {
+    .bg-#{$i} {
+        background-color: nth($bg, $i);
+    }
+}
+
+.img-main {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    span {
+        position: absolute;
+        @extend .display-align;
+        top: 12px;
+        right: -12px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $blue1;
+        color: $white;
+    }
+}
+
+hr {
+    border: 1px dotted $gray7;
+    border-style: none none dotted;
+    margin: 15px 15px;
+}
+
+.navigation,
+.list-item button,
+.title-banner span,
+.categories,
+.btn-filter,
+.font-fm-monb,
+.title-latest span,
+.btn-latest button,
+.title-content-about,
+.col-list-products,
+.text-sell-more span,
+.btn-sell-more,
+.img-logo-footer span,
+.title-footer {
+    @include font-style(mb)
+}
+
+
+/* MAIN-CONTENT */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 111px;
+}
+
+.products-container {
+    @extend .area-content;
+}
